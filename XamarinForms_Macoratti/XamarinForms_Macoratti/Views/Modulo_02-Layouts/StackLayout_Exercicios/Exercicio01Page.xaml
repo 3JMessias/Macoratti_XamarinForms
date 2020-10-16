@@ -2,8 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamarinForms_Macoratti"
-             x:Class="XamarinForms_Macoratti.StackLayoutPage"
+             x:Class="XamarinForms_Macoratti.Exercicio01Page"
              >
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" >
+        </OnPlatform>
+    </ContentPage.Padding>
+
     <StackLayout 
         BackgroundColor="White"
         VerticalOptions="FillAndExpand"

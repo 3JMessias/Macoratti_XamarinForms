@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace XamarinForms_Macoratti
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StackLayoutPage : ContentPage
+    public partial class Exercicio01Page : ContentPage
     {
         private string likes = "25";
         
@@ -21,7 +21,7 @@ namespace XamarinForms_Macoratti
             set { likes = value; }
         }
 
-        public StackLayoutPage()
+        public Exercicio01Page()
         {
             InitializeComponent();
 

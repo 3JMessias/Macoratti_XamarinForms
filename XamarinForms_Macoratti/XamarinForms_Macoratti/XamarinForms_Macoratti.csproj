@@ -31,8 +31,26 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\Modulo_02-Layouts\StackLayoutPage.xaml">
+    <EmbeddedResource Update="Views\Modulo_02-Layouts\GridLayout_Exercicios\GL_Exercicio01Page.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Modulo_02-Layouts\GridLayout_Exercicios\GL_Exercicio02Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Modulo_02-Layouts\StackLayout_Exercicios\Exercicio01Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Modulo_02-Layouts\StackLayout_Exercicios\Exercicio02Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Modulo_02-Layouts\StackLayout_Exercicios\Exercicio03Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Modulo_02-Layouts\StackLayout_Exercicios\Exercicio01Page.xaml.cs">
+      <DependentUpon>Exercicio01Page.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
