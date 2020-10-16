@@ -3,10 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinForms_Macoratti.Views.Modulo_02_Layouts.GridLayout_Exercicios.GL_Exercicio02Page">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid VerticalOptions="FillAndExpand" BackgroundColor="White" Padding="30" RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            
+            <StackLayout Spacing="8" VerticalOptions="Center">
+                <Label Text="Cadastro de Usuários" TextColor="Purple" FontSize="30"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+                <Label Text="Faça o login ou registre-se" TextColor="Gray" FontSize="18"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </StackLayout>
+            <Button Text="Login" TextColor="White" BackgroundColor="#2073b7" Grid.Row="1"/>
+            <Button Text="Registrar" TextColor="White" BackgroundColor="#2073b7" Grid.Row="2" />
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
